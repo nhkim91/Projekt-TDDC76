@@ -16,7 +16,16 @@ SOURCES += \
     flying_object.cpp \
     bullet.cpp \
     meteorite.cpp \
-    main.cpp
+    main.cpp \
+    power_up.cpp \
+    player.cpp \
+    alien.cpp \
+    level_1.cpp \
+    level_2.cpp \
+    slow_motion.cpp \
+    attack_up.cpp \
+    shield.cpp \
+    life.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -27,5 +36,14 @@ HEADERS += \
     highscore.h \
     flying_object.h \
     bullet.h \
-    meteorite.h
+    meteorite.h \
+    power_up.h \
+    player.h \
+    alien.h \
+    level_1.h \
+    level_2.h \
+    slow_motion.h \
+    attack_up.h \
+    shield.h \
+    life.h
 
