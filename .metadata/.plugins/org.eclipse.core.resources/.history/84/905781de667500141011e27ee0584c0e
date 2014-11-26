@@ -14,7 +14,7 @@ public:
 	int life_;
 	int dmg_;
 	std::vector<int> position_;
-	std::vector<class power_up_attack*> power_up_attack_;
+	std::vector<class power_up_attack*> power_up_attack_{nullptr};
 
 
 	// Konstruktor

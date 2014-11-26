@@ -62,7 +62,6 @@ void player::hit(flying_objects& other)
 			if (power_up_attack_.empty())
 			{
 				power_up_attack_.push_back(other_obj_5);
-				return;
 			}
 
 			else

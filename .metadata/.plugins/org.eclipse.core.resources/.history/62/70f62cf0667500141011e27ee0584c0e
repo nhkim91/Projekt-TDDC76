@@ -32,17 +32,18 @@ int main() {
 	player_.get_power_up();
 	if (player_.get_power_up().empty())
 	{
-		cout << "ratt!" << endl;
+		cout << "ratt!";
 	}
 	cout << player_.get_power_up().empty() << endl;
 	cout << player_.get_power_up().size() << endl;
-
+	if(player_.get_power_up().at(0)==nullptr)
+	{
+		cout << "sant!" << endl;
+	}
 	attack_.countdown_timer();
 	cout << attack_.get_timer() << endl;
 	player_.hit(attack_);
-	cout << player_.get_power_up().empty() << endl;
-
-	cout << player_.get_power_up().at(0)->get_life() << endl;
+	cout << player_.get_power_up().at(1)->get_life() << endl;
 
 
 
