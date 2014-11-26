@@ -1,0 +1,88 @@
+#include "flying_objects.h"
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+/////////////////////////////////////////////////
+
+/////////////////////////////////////////////////
+void meteorite::hit(flying_objects& other)
+{
+	flying_objects *ptr_;
+	ptr_ = &other;
+
+	meteorite* other_obj;
+	other_obj = dynamic_cast<meteorite*>(ptr_);
+	if (other_obj != nullptr)
+		{
+			life_ = life_-1;
+		}
+
+	return;
+}
+
+vector<int> meteorite::movement() const
+{
+
+	return this->position_;
+}
+
+int meteorite::get_life() const
+{
+	return life_;
+}
+
+
+/////////////////////////////////////////////////
+vector<int> bullet::movement() const
+{
+
+	return position_;
+}
+
+int bullet::get_life() const
+{
+	return life_;
+}
+
+int bullet::get_dmg() const
+{
+	return dmg_;
+}
+
+void bullet::hit(flying_objects& other)
+{
+	return;
+}
+/////////////////////////////////////////////////
+
+vector<int> power_up::movement() const
+{
+
+	return this->position_;
+}
+
+int power_up::get_life() const
+{
+	return life_;
+}
+
+void power_up::hit(flying_objects& other)
+{
+	return;
+}
+/////////////////////////////////////////////////
+
+vector<int> alien::movement() const
+{
+
+	return this->position_;
+}
+
+
+int alien::get_life() const
+{
+	return life_;
+}

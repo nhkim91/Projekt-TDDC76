@@ -1,0 +1,15 @@
+21:57:19 **** Incremental Build of configuration Debug for project Flying_objects ****
+make all 
+Building file: ../src/flying_objects_test.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/Users/anton/Documents/workspace/Projekt-TDDC76/Flying_objects/Framework" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/flying_objects_test.d" -MT"src/flying_objects_test.d" -o "src/flying_objects_test.o" "../src/flying_objects_test.cpp"
+Finished building: ../src/flying_objects_test.cpp
+ 
+Building target: Flying_objects
+Invoking: MacOS X C++ Linker
+g++ -F/Library/Frameworks -std=c++11 -framework SDL2 -framework cocoa -o "Flying_objects"  ./src/alien.o ./src/bullet.o ./src/flying_objects_test.o ./src/meteorite.o ./src/player.o ./src/power_up.o   
+Finished building target: Flying_objects
+ 
+21:57:24 **** Incremental Build of configuration Debug for project Flying_objects ****
+make all 
+make: Nothing to be done for `all'.
