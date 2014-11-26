@@ -14,7 +14,7 @@ using namespace std;
 vector<int> bullet::movement() const
 {
 
-	return speed_;
+	return position_;
 }
 
 int bullet::get_life() const

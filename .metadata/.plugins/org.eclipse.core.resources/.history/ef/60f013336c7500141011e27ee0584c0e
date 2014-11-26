@@ -18,7 +18,7 @@ public:
 
 
 	// Konstruktor
-	player(int life,int dmg, std::vector<int> speed): life_{life}, dmg_{dmg}, speed_{speed}{};
+	player(int life,int dmg, std::vector<int> position): life_{life}, dmg_{dmg}, speed_{position}{};
 
 	//Operatorer
 	void operator=(const player&);

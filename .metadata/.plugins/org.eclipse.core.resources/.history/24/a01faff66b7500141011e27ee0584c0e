@@ -20,7 +20,7 @@ public:
 	// Datamedlemmar
 	int life_;
 	int dmg_;
-	std::vector<int> speed_;
+	std::vector<int> positon_;
 
 	int get_life() const override;
 	std::vector<int> movement() const override;
@@ -29,7 +29,7 @@ public:
 
 
 	// Konstruktor
-	bullet(int life,int dmg, std::vector<int> speed): life_{life},dmg_{dmg}, speed_{speed}{};
+	bullet(int life,int dmg, std::vector<int> position): life_{life},dmg_{dmg}, position_{position}{};
 
 	// Destruktor
 	 ~bullet() = default;
@@ -39,7 +39,7 @@ class bullet_mk1 : public bullet
 {
 public:
 		// Konstruktor
-	bullet_mk1(int life, int dmg, std::vector<int> speed): bullet::bullet{life,dmg,speed}{};
+	bullet_mk1(int life, int dmg, std::vector<int> position): bullet::bullet{life,dmg,position}{};
 
 
 	 // Funktioner

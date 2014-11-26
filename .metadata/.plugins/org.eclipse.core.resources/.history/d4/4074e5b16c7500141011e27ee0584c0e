@@ -34,7 +34,7 @@ public:
 		{
 		 	 return power_up_attack_;
 		}
-
+	 class bullet
 
 };
 #endif /* PLAYER_H_ */

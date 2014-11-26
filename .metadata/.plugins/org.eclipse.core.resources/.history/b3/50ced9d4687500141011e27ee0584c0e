@@ -9,14 +9,14 @@ void player::operator=(const player& other)
 {
 	life_ = other.life_;
 	dmg_ = other.dmg_;
-	speed_ = other.speed_;
+	position_ = other.position_;
 }
 
 
 
 vector<int> player::movement() const
 {
-	return speed_;
+	return position_;
 }
 
 int player::get_life() const
@@ -42,7 +42,6 @@ void player::hit(flying_objects& other)
 	if (other_obj_2 != nullptr)
 	{
 		life_= life_-other_obj_2->get_dmg();
-		return;
 	}
 
 	alien* other_obj_3;
@@ -50,7 +49,6 @@ void player::hit(flying_objects& other)
 	if (other_obj_3 != nullptr)
 	{
 		--life_;
-		return;
 	}
 
 	power_up* other_obj_4;
@@ -71,8 +69,8 @@ void player::hit(flying_objects& other)
 			else
 			{
 				power_up_attack_.at(0)->reset_timer();
-				return;
 			}
+			return;
 		}
 
 
@@ -81,9 +79,7 @@ void player::hit(flying_objects& other)
 		if (other_obj_6 != nullptr)
 		{
 			++life_;
-			return;
 		}
-
 
 
 	}

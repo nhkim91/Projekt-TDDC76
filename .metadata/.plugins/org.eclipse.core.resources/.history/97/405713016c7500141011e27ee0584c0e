@@ -39,7 +39,7 @@ class bullet_mk1 : public bullet
 {
 public:
 		// Konstruktor
-	bullet_mk1(int life, int dmg, std::vector<int> speed): bullet::bullet{life,dmg,speed}{};
+	bullet_mk1(int life, int dmg, std::vector<int> position): bullet::bullet{life,dmg,position}{};
 
 
 	 // Funktioner

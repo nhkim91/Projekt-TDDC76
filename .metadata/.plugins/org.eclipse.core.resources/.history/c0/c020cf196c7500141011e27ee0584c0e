@@ -13,12 +13,12 @@ public:
 	// Datamedlemmar
 	int life_;
 	int dmg_;
-	std::vector<int> speed_;
+	std::vector<int> position_;
 	std::vector<class power_up_attack*> power_up_attack_;
 
 
 	// Konstruktor
-	player(int life,int dmg, std::vector<int> speed): life_{life}, dmg_{dmg}, speed_{speed}{};
+	player(int life,int dmg, std::vector<int> position): life_{life}, dmg_{dmg}, position_{position}{};
 
 	//Operatorer
 	void operator=(const player&);

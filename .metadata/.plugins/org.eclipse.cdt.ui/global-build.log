@@ -1,15 +1,40 @@
-13:33:24 **** Incremental Build of configuration Debug for project Flying_objects ****
+14:04:04 **** Incremental Build of configuration Debug for project Flying_objects ****
 make all 
+Building file: ../src/alien.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/Users/anton/Documents/workspace/Projekt-TDDC76/Flying_objects/Framework" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/alien.d" -MT"src/alien.d" -o "src/alien.o" "../src/alien.cpp"
+Finished building: ../src/alien.cpp
+ 
+Building file: ../src/bullet.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/Users/anton/Documents/workspace/Projekt-TDDC76/Flying_objects/Framework" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/bullet.d" -MT"src/bullet.d" -o "src/bullet.o" "../src/bullet.cpp"
+Finished building: ../src/bullet.cpp
+ 
 Building file: ../src/flying_objects_test.cpp
 Invoking: GCC C++ Compiler
 g++ -std=c++0x -I"/Users/anton/Documents/workspace/Projekt-TDDC76/Flying_objects/Framework" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/flying_objects_test.d" -MT"src/flying_objects_test.d" -o "src/flying_objects_test.o" "../src/flying_objects_test.cpp"
 Finished building: ../src/flying_objects_test.cpp
+ 
+Building file: ../src/meteorite.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/Users/anton/Documents/workspace/Projekt-TDDC76/Flying_objects/Framework" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/meteorite.d" -MT"src/meteorite.d" -o "src/meteorite.o" "../src/meteorite.cpp"
+Finished building: ../src/meteorite.cpp
+ 
+Building file: ../src/player.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/Users/anton/Documents/workspace/Projekt-TDDC76/Flying_objects/Framework" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/player.d" -MT"src/player.d" -o "src/player.o" "../src/player.cpp"
+Finished building: ../src/player.cpp
+ 
+Building file: ../src/power_up.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/Users/anton/Documents/workspace/Projekt-TDDC76/Flying_objects/Framework" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/power_up.d" -MT"src/power_up.d" -o "src/power_up.o" "../src/power_up.cpp"
+Finished building: ../src/power_up.cpp
  
 Building target: Flying_objects
 Invoking: MacOS X C++ Linker
 g++ -F/Library/Frameworks -std=c++11 -framework SDL2 -framework cocoa -o "Flying_objects"  ./src/alien.o ./src/bullet.o ./src/flying_objects_test.o ./src/meteorite.o ./src/player.o ./src/power_up.o   
 Finished building target: Flying_objects
  
-13:33:30 **** Incremental Build of configuration Debug for project Flying_objects ****
+14:04:10 **** Incremental Build of configuration Debug for project Flying_objects ****
 make all 
 make: Nothing to be done for `all'.

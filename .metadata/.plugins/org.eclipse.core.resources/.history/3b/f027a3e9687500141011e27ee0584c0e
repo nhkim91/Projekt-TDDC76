@@ -9,14 +9,14 @@ void player::operator=(const player& other)
 {
 	life_ = other.life_;
 	dmg_ = other.dmg_;
-	speed_ = other.speed_;
+	position_ = other.position_;
 }
 
 
 
 vector<int> player::movement() const
 {
-	return speed_;
+	return position_;
 }
 
 int player::get_life() const
@@ -81,9 +81,7 @@ void player::hit(flying_objects& other)
 		if (other_obj_6 != nullptr)
 		{
 			++life_;
-			return;
 		}
-
 
 
 	}
